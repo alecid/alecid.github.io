@@ -1,7 +1,141 @@
+<!-- Fichier jean-dupont/index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julien Vouin - Carte de Visite</title>
+ <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        .card-container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 80px 30px 10px 30px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .company-logo {
+            max-width: 180px;
+            max-height: 150px;
+            object-fit: contain;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            margin-bottom: 20px;
+        }
+        .header-content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header h1 {
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        .header p {
+            margin-top: 0;
+            text-align: center;
+        }
+        .photo-container {
+            text-align: center;
+            padding: 15px 0;
+        }
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #2c3e50;
+            box-shadow: 0 0 15px rgba(44,62,80);
+        }
+        .info-container {
+            padding: 0px 30px;
+        }
+        .info-item {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .info-label {
+            font-weight: bold;
+            width: 100px;
+        }
+        .download-btn {
+            display: block;
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 20px 0;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .download-btn:hover {
+            background-color: #2980b9;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div class="card-container">
+        <div class="header">
+            <img src="../logo.png" alt="HP Inc" class="company-logo">    
+            <h1>Alejandro Cid</h1>
+            <p>Country Support Manager</p>
+        </div>
+        
+        <div class="photo-container">
+            <img src="alejandro.jpg" alt="Alejandro Cid" class="profile-photo">
+        </div>
+        
+        <div class="info-container">
+            <div class="info-item">
+                <span class="info-label">Nom:</span>
+                <span>Alejandro Cid</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Phone:</span>
+                <span>+33 6 22 48 93 76</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Email:</span>
+                <span>acid@hp.com</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Adresse:</span>
+                <span>Zi de la plaine, <br> 38560 Champ-sur-Drac, <br> France</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Site web:</span>
+                <span><a href="https://www.hp.com/fr-fr/home.html">hp.com/fr-fr</a></span>
+            </div>
+            
+            <a href="alejandro.vcf" class="download-btn">Download Contact Card</a>
+        </div>
+    </div>
 </body>
 </html>
